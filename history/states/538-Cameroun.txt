@@ -1,0 +1,23 @@
+
+state={
+	id=538
+	name="STATE_538" # Central Congo
+	manpower = 1993974
+	
+	state_category = pastoral
+	resources={
+		rubber=18 # was: 5
+	}
+	history={
+		owner = RKA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = COG
+		add_core_of = RKA
+	}
+
+	provinces={
+		988 7219 7931 8016 8048 10071 10883 10951 12741 12775 12824 
+	}
+}

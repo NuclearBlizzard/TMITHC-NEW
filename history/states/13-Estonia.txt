@@ -1,0 +1,33 @@
+
+state={
+	id=13
+	name="STATE_13"
+	manpower = 1230660
+	resources={
+		steel=4 # was: 3
+		tungsten= 18
+	}
+	state_category = city
+	history={
+		owner = RKO
+		victory_points = {
+			3152 10
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 1
+			air_base = 2
+			3152 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = EST
+		add_core_of = RKO
+	}
+
+	provinces={
+		83 185 308 496 567 3074 3152 3174 6201 6381 9079 11127 11291 11426 
+	}
+}

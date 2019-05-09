@@ -1,0 +1,51 @@
+﻿capital = 617
+
+oob = "SIK_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	
+}
+
+
+
+1959.1.1 = {
+
+	add_ideas = {
+	limited_conscription
+	}	
+
+	set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		fascism = {
+			popularity = 2
+			banned = no
+		}
+		
+		communism = {
+			popularity = 98
+			#banned = no #default is no
+		}
+	}
+	
+	ruling_party = communism
+	last_election = "1959.1.1"
+}
+
+create_country_leader = {
+	name = "Sheng Shicai"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "SIK_sheng.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+

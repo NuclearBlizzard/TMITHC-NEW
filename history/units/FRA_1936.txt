@@ -1,0 +1,495 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division d'Infanterie"		
+	division_names_group = FRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Motorisée"
+	division_names_group = FRA_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Unité de la Milice Française"
+	division_names_group = FRA_MILI_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
+	division_names_group = FRA_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+	}
+}
+division_template = {
+	name = "Division Légère Mécanique" 		# Division Légère Mécanique
+	division_names_group = FRA_MEC_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+##### OOB #####
+units = {
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11506
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		name = "Milice Parisienne"
+		location = 11506
+		division_template = "Unité de la Milice Française"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11506
+		division_template = "Division Légère Mécanique"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 11506
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9434
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11563
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 6449
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9495
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11465
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3552
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6766
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6657
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6766
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9898
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9898
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 6613
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 3594
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 512
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 6518
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 9737
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {			
+		name = "Milice du Cantal"
+		location = 620
+		division_template = "Unité de la Milice Française"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Milice du Corrèze"
+		location = 9751
+		division_template = "Unité de la Milice Française"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Milice du Dordogne"
+		location = 620
+		division_template = "Unité de la Milice Française"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Milice du Hérault"
+		location = 769
+		division_template = "Unité de la Milice Française"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Milice d'Ardèche"
+		location = 9732
+		division_template = "Unité de la Milice Française"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Milice du Sarthe"
+		location = 3495
+		division_template = "Unité de la Milice Française"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9523
+		division_template = "Division Légère Mécanique"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6613
+		division_template = "Division Légère Mécanique"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9737
+		division_template = "Division Légère Mécanique"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9725
+		division_template = "Division d'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {			
+		name = "Légion du Charlemagne-SS"
+		location = 6569
+		division_template = "Division d'Infanterie Motorisée"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6688
+		division_template = "Division d'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6962
+		division_template = "Division d'Infanterie Motorisée"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11716
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9710
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12169
+		division_template = "Division d'Infanterie Alpine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+}
+
+### Air Wings
+
+air_wings = {
+	#Normandy
+	15 = { 
+		fighter_equipment_1 = { owner = "FRA" amount = 310 }
+		tac_bomber_equipment_1 =  { owner = "FRA" amount = 100 }
+	}
+	#Rhone
+	20 = {
+		fighter_equipment_1 = { owner = "FRA" amount = 150 }
+		tac_bomber_equipment_1 =  { owner = "FRA" amount = 60 }
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 2
+		progress = 0.65
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "FRA"
+		}
+		requested_factories = 3
+		progress = 0.95
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 2
+		progress = 0.85
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 2
+		progress = 0.95
+		efficiency = 100
+	}
+}

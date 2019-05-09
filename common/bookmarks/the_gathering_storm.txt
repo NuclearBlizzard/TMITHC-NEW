@@ -1,0 +1,149 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1960.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				GER_african_question
+				GER_ss
+			}
+			focuses = {
+				
+			}
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				ITA_military_purges_3
+				ITA_german_influence_in_italy_45
+			}	
+			focuses = {
+				ITA_the_former_traitor_pietro_nenni
+				ITA_the_heir_apparent_cesare_maria_de_vecchi
+				ITA_the_corporatist_amintore_fanfani
+			}		
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				JAP_Instability
+			}	
+			
+		}
+		"SPR"={
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+	
+		}
+		"JPS"={
+			history = "JPS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+	
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				rus_risk_of_famine
+				rus_destroyed_industry
+				sov_beria_controls_the_government
+
+			}
+	
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_60's_DESC"
+			ideology = fascism
+			ideas = {
+				ROM_revenge_against_Hungary
+				ROM_Democratic_Underground
+				ROM_Unstable_Economy
+			}
+			focuses = {
+
+			}	
+		}
+		
+		"MEX"={
+		    minor = yes
+			history = "MEX_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MEX_TEST
+				MEX_TEST1
+				MEX_TEST2
+			}
+			focuses = {
+				MEX_western_focus
+				MEX_friendship_treaty_with_italy
+				MEX_reinforce_old_alliances
+			}	
+		}
+		
+		"FRA"={
+		    minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				FRA_chained_republic
+				FRA_milice
+				FRA_active_resistance
+			}
+			focuses = {
+				FRA_embraceresistance
+				FRA_francisqu
+				FRA_loyaltogermany
+			}
+		}
+		
+		"NEU"={
+		    minor = yes
+			history = "NEU_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				NEU_No_Army
+				NEU_Anarchy
+				NEU_No_Established_Industry
+			}
+			
+			focuses = {
+			}	
+		}	
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

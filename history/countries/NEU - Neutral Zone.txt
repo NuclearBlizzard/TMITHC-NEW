@@ -1,0 +1,56 @@
+﻿capital = 382
+
+oob = "NEU_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+add_ideas = {
+		
+		NEU_Axis_Infiltration
+		NEU_Anarchy
+		NEU_No_Established_Industry
+		NEU_No_Army
+
+	}
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 75
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "No Government"
+	desc = "POLITICS_ANARCHY_DESC"
+	picture = "portrait_neu_anarchy.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
