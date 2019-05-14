@@ -6,7 +6,7 @@ state={
 	state_category = town
 
 	history={
-		owner = HUN
+		owner = SER
 		controller = SER
 
 		buildings = {

@@ -1,9 +1,9 @@
 state= {
 	id=2
 	name="STATE_2" # Latium
-	manpower = 4645112
+	manpower = 7545112
 	
-	state_category = large_city
+	state_category = metropolis
 
 	history=
 	{
