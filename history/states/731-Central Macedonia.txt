@@ -1,12 +1,12 @@
 state={
 	id=731
 	name="STATE_731"
-	manpower=1589700
+	manpower=1989700
 	
 	state_category = city
 
 	history={
-		owner = GRE
+		owner = BUL
 		victory_points = {
 			11818 10
 		}
