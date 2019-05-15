@@ -45,23 +45,24 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				JAP_Instability
-			}	
-			
+			}
+			focuses = {
+			}
 		}
 		"SPR"={
 			history = "SPR_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-
 			}
-	
+			focuses = {
+			}
 		}
 		"JPS"={
 			history = "JPS_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-
+			}
+			focuses = {
 			}
 	
 		}
@@ -72,7 +73,8 @@ bookmarks = {
 				rus_risk_of_famine
 				rus_destroyed_industry
 				sov_beria_controls_the_government
-
+			}
+			focuses = {
 			}
 	
 		}
@@ -91,22 +93,6 @@ bookmarks = {
 			}	
 		}
 		
-		"MEX"={
-		    minor = yes
-			history = "MEX_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				MEX_TEST
-				MEX_TEST1
-				MEX_TEST2
-			}
-			focuses = {
-				MEX_western_focus
-				MEX_friendship_treaty_with_italy
-				MEX_reinforce_old_alliances
-			}	
-		}
-		
 		"FRA"={
 		    minor = yes
 			history = "FRA_GATHERING_STORM_DESC"
@@ -117,9 +103,6 @@ bookmarks = {
 				FRA_active_resistance
 			}
 			focuses = {
-				FRA_embraceresistance
-				FRA_francisqu
-				FRA_loyaltogermany
 			}
 		}
 		
