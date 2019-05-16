@@ -7,7 +7,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = MEX
+		owner = JPS
+		add_core_of = JPS
 		buildings = {
 			infrastructure = 3
 			4908 = {

@@ -277,34 +277,6 @@ music = {
 	}
 }
 music = {
-	song = "Rhodies Everywhere"
-	
-	chance = {
-		modifier = {
-			not = { original_tag = RHD }
-			factor = 0
-		}
-		modifier = {
-			original_tag = RHD
-			factor = 2
-		}
-	}
-}
-music = {
-	song = "Rhodesians Never Die"
-	
-	chance = {
-		modifier = {
-			not = { original_tag = RHD }
-			factor = 0
-		}
-		modifier = {
-			original_tag = RHD
-			factor = 2
-		}
-	}
-}
-music = {
 	song = "Marching With The Diggers"
 	
 	chance = {
@@ -819,7 +791,4 @@ music = {
 			factor = 2
 		}
 	}
-}
-music = {
-	song = "El himno de ricardo"
 }

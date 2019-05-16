@@ -2,9 +2,9 @@
 state={
 	id=26
 	name="STATE_26" # Auveregne
-	manpower = 1089800
+	manpower = 1489800
 	
-	state_category = large_town
+	state_category = city
 
 	history={
 		owner = FRA

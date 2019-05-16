@@ -20,6 +20,7 @@ state={
 			}
 		}
 		add_core_of = BRA
+		add_core_of = HAH
 		victory_points = {
 			5107 3 
 		}

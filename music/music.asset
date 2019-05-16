@@ -58,16 +58,6 @@ music = {
 	volume = 0.65
 }
 music = {
-	name = "Rhodies Everywhere"
-	file = "RhodiesEverywhere.ogg"
-	volume = 0.65
-}
-music = {
-	name = "Rhodesians Never Die"
-	file = "RhodesiansNeverDie.ogg"
-	volume = 0.65
-}
-music = {
 	name = "Marching With The Diggers"
 	file = "MarchingWiththeDiggers.ogg"
 	volume = 0.65
@@ -312,11 +302,6 @@ music = {
 music = {
 	name = "Cara al Sol"
 	file = "spain1.ogg"
-	volume = 0.65
-}
-music = {
-	name = "El himno de ricardo"
-	file = "himnoricardo.ogg"
 	volume = 0.65
 }
 
