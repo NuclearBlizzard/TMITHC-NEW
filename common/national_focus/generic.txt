@@ -12,7 +12,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 0
 		y = 0
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 65
@@ -68,7 +68,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_industry }
 		ai_will_do = {
@@ -108,7 +108,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_civ_1 }
 		ai_will_do = {
@@ -142,7 +142,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -2
 		y = 3
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_civ_2 }
 		ai_will_do = {
@@ -176,7 +176,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -2
 		y = 4
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_civ_3 }
 		ai_will_do = {
@@ -210,7 +210,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -2
 		y = 5
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_civ_4 }
 		ai_will_do = {
@@ -244,7 +244,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_industry }
 		ai_will_do = {
@@ -284,7 +284,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_1 }
 		ai_will_do = {
@@ -318,7 +318,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 2
 		y = 3
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_2 }
 		ai_will_do = {
@@ -352,7 +352,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 2
 		y = 4
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_3 }
 		ai_will_do = {
@@ -386,7 +386,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 2
 		y = 5
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_4 }
 		ai_will_do = {
@@ -420,7 +420,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_2 focus = generic_civ_2 }
 		ai_will_do = {
@@ -464,7 +464,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 0
 		y = 4
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_civ_1 }
 		ai_will_do = {
@@ -508,7 +508,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = 0
 		y = 5
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_civ_2 }
 		ai_will_do = {
@@ -552,7 +552,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -1
 		y = 6
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mil_civ_3 focus = generic_civ_5 }
 		ai_will_do = {
@@ -614,7 +614,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -1
 		y = 7
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_infra_1 }
 		ai_will_do = {
@@ -676,7 +676,7 @@ focus_tree = {
 		relative_position_id = generic_industry
 		x = -1
 		y = 8
-		cost = 10
+		cost = 5.8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_infra_2 }
 		ai_will_do = {
