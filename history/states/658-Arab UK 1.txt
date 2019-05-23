@@ -7,19 +7,22 @@ state={
 		oil=5 # was: 6
 	}
 	
-	state_category = pastoral
+	state_category = city
 
 
 	history={
 		add_core_of = UAE
 		owner = SAU
+		add_core_of = SAU
 		victory_points = {
-			7960 1 
+			7960 5
 		}
 		buildings = {
-			infrastructure = 2
+			dockyard = 1
+			industrial_complex = 3
+			infrastructure = 4
 			7960 = {
-				naval_base = 3
+				naval_base = 6
 			}
 		}
 

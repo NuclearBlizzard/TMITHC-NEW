@@ -2,7 +2,7 @@
 state={
 	id=379
 	name="STATE_379"
-	manpower = 91057
+	manpower = 341057
 	
 	state_category = rural
 	
@@ -16,6 +16,7 @@ state={
 		owner = JPS
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 		}
 		add_core_of = USA
 	}

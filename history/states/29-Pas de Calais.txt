@@ -2,9 +2,9 @@
 state={
 	id=29
 	name="STATE_29"
-	manpower = 3876400
+	manpower = 3276400
 	
-	state_category = metropolis
+	state_category = large_city
 	resources={
 		steel=42 # was: 112
 		aluminium=8 # was: 22
@@ -31,11 +31,6 @@ state={
 		}
 		add_core_of = FRA
 		add_core_of = GER
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-			}
-		}
 	}
 
 	provinces={

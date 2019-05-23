@@ -2,7 +2,7 @@
 state={
 	id=378
 	name="STATE_378"
-	manpower = 5677248
+	manpower = 6677248
 	
 	state_category = metropolis
 	
@@ -14,7 +14,7 @@ state={
 	history={
 		owner = JPS
 		buildings = {
-			infrastructure = 6
+			infrastructure = 8
 			arms_factory = 2
 			industrial_complex = 6
 			dockyard = 2
@@ -32,23 +32,18 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = USA
+		add_core_of = JPS
 		victory_points = {
-			9814 30
+			9814 50
 		}
 		victory_points = {
-			1562 15 
+			1562 15
 		}
 		victory_points = {
-			9671 25
+			9671 35
 		}
 		victory_points = {
-			9713 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-			}
+			9713 3
 		}
 	}
 

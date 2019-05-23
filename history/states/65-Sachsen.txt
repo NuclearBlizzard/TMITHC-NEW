@@ -14,7 +14,8 @@ state={
 		owner = GER
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
+			synthetic_refinery = 2
+			arms_factory = 1
 			industrial_complex = 7
 		}
 		victory_points = {
@@ -24,13 +25,6 @@ state={
 			3535 5 
 		}
 		add_core_of = GER
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 2
-				arms_factory = 5
-				industrial_complex = 10
-			}
-		}
 	}
 
 	provinces={

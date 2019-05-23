@@ -2,9 +2,9 @@
 state={
 	id=34
 	name="STATE_34"
-	manpower = 3581300
+	manpower = 1581300
 	
-	state_category = metropolis
+	state_category = city
 
 	history={
 		owner = GER
@@ -19,8 +19,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 8
-			arms_factory = 2
-			industrial_complex = 4
+			arms_factory = 1
+			industrial_complex = 2
 			air_base = 3
 
 		}

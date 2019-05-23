@@ -2,7 +2,7 @@
 state={
 	id=388
 	name="STATE_388"
-	manpower = 537605
+	manpower = 1337605
 	state_category = rural
 	resources={
 		tungsten=11 # was: 16
@@ -11,9 +11,11 @@ state={
 	history={
 		owner = NEU
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
 		}
-		add_core_of = USA
+		add_core_of = NEU
 		victory_points = {
 			4860 1 
 		}

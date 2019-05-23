@@ -2,10 +2,10 @@
 state={
 	id=375
 	name="STATE_375"
-	manpower = 5824712
+	manpower = 3824712
 	
 	
-	state_category = metropolis
+	state_category = large_city
 	
 	resources={
 		oil=320 # was: 580
@@ -17,7 +17,7 @@ state={
 		owner = USA
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 9
+			industrial_complex = 3
 			air_base = 3
 			10337 = {
 				naval_base = 3
@@ -28,13 +28,13 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			10337 10
+			10337 25
 		}
 		victory_points = {
-			3960 10 
+			3960 20
 		}
 		victory_points = {
-			12782 1 
+			12782 5
 		}
 
 	}

@@ -2,9 +2,9 @@
 state={
 	id=377
 	name="STATE_377"
-	manpower = 435572
+	manpower = 735572
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
 		steel=20 # was: 40
@@ -15,8 +15,9 @@ state={
 	history={
 		owner = JPS
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
 			air_base = 2
 		}
 		add_core_of = USA

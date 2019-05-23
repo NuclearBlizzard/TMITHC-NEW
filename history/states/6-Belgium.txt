@@ -2,12 +2,12 @@
 state={
 	id=6
 	name="STATE_6" # Flanders
-	manpower = 6347700
+	manpower = 3347700
 	resources={
 		steel=25 # was: 48
 	}
 	
-	state_category = metropolis
+	state_category = large_city
 
 	history={
 		owner = GER
@@ -18,8 +18,8 @@ state={
 		victory_points = { 3576 1 }
 		buildings = {
 			infrastructure = 9
-			arms_factory = 6
-			industrial_complex = 8
+			arms_factory = 3
+			industrial_complex = 5
 			air_base = 3
 			6560 = {
 				naval_base = 3

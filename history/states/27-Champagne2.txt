@@ -2,7 +2,7 @@
 state={
 	id=27
 	name="STATE_27" # Bourgogne
-	manpower = 2270800
+	manpower = 2570800
 	
 	state_category = large_city
 	
@@ -24,6 +24,6 @@ state={
 	}
 
 	provinces={
-		648 667 680 817 3506 3652 3669 3681 9490 9625 9644 11628 
+		551 648 667 680 817 3506 3533 3652 3669 3681 6531 9490 9625 9644 11628 11732 
 	}
 }
