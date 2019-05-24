@@ -1,0 +1,170 @@
+ideas = {
+
+	country = {
+		generic_cheap_rifles = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		
+		generic_manpower_boost_1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = eng_imperial_conscription
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		
+		generic_manpower_boost_2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = eng_imperial_conscription
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		
+		generic_fast_tanks = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+			removal_cost = -1
+
+			modifier = {
+				no_supply_grace = 72
+				army_armor_speed_factor = 0.15
+			}
+		}
+		
+		generic_thunderous_storm_idea = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_artillery_regiments
+
+			removal_cost = -1
+
+			modifier = {
+				army_artillery_attack_factor = 0.15
+				army_artillery_defence_factor = 0.15
+			}
+		}
+		
+		generic_ic_artillery_idea = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		
+		generic_old_generals = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = german_advisors
+
+			removal_cost = -1
+
+			modifier = {
+				military_leader_cost_factor = -0.50
+				army_leader_start_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_planning_level = 1
+			}
+		}
+		
+		generic_young_generals = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = german_advisors
+
+			removal_cost = -1
+
+			modifier = {
+				military_leader_cost_factor = -0.50
+				army_leader_start_level = 1
+				army_leader_start_attack_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+	
+	}
+	
+}

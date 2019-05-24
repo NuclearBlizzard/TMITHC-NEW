@@ -7,6 +7,8 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 100 y = 2000 }
 	
+	##### INDUSTRY TREE
+	
 	focus = {
 		id = generic_industry
 		icon = GFX_goal_generic_production
@@ -85,11 +87,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -117,14 +114,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					OR = {
-						is_in_home_area = yes
-						free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-						}
-					}
+					is_in_home_area = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -151,14 +141,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					OR = {
-						is_in_home_area = yes
-						free_building_slots = {
-						building = industrial_complex
-						size > 3
-						include_locked = yes
-						}
-					}
+					is_in_home_area = yes
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -185,14 +168,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					OR = {
-						is_in_home_area = yes
-						free_building_slots = {
-						building = industrial_complex
-						size > 3
-						include_locked = yes
-						}
-					}
+					is_in_home_area = yes
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -219,14 +195,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					OR = {
-						is_in_home_area = yes
-						free_building_slots = {
-						building = industrial_complex
-						size > 3
-						include_locked = yes
-						}
-					}
+					is_in_home_area = yes
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -259,14 +228,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					OR = {
-						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-						}
-					}
+					is_in_home_area = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -295,11 +257,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -329,11 +286,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 3
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 3
@@ -363,11 +315,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 3
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 3
@@ -397,11 +344,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 3
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 3
@@ -431,16 +373,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-						}
-						free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -475,16 +407,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-						}
-						free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -519,16 +441,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_in_home_area = yes
-						free_building_slots = {
-						building = arms_factory
-						size > 4
-						include_locked = yes
-						}
-						free_building_slots = {
-						building = industrial_complex
-						size > 4
-						include_locked = yes
-						}
 					}
 				}
 				add_extra_state_shared_building_slots = 4
@@ -550,11 +462,11 @@ focus_tree = {
 		id = generic_infra_1
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = generic_industry
-		x = -1
+		x = 0
 		y = 6
 		cost = 5.8
 		available_if_capitulated = yes
-		prerequisite = { focus = generic_mil_civ_3 focus = generic_civ_5 }
+		prerequisite = { focus = generic_mil_civ_3 focus = generic_civ_5 focus = generic_mil_5 }
 		ai_will_do = {
 			factor = 10
 		}
@@ -578,7 +490,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -601,7 +513,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -612,7 +524,7 @@ focus_tree = {
 		id = generic_infra_2
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = generic_industry
-		x = -1
+		x = 0
 		y = 7
 		cost = 5.8
 		available_if_capitulated = yes
@@ -640,7 +552,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -663,7 +575,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -674,7 +586,7 @@ focus_tree = {
 		id = generic_infra_3
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = generic_industry
-		x = -1
+		x = 0
 		y = 8
 		cost = 5.8
 		available_if_capitulated = yes
@@ -729,6 +641,561 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+	
+	##### ARMY TREE
+	
+	focus = {
+		id = generic_equipment
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 0
+		cost = 5.8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_doctrine_old
+		icon = GFX_goal_generic_army_doctrines
+		x = 8
+		y = 1
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_doctrine_new }
+		prerequisite = { focus = generic_equipment }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = trench_warfare
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = mass_assault
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_doctrine_new
+		icon = GFX_focus_generic_combined_arms
+		x = 16
+		y = 1
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_doctrine_old }
+		prerequisite = { focus = generic_equipment }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = mobile_warfare
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = superior_firepower
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_trench_warfare
+		icon = GFX_goal_generic_position_armies
+		x = -2
+		y = 1
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_mass_assault }
+		prerequisite = { focus = generic_doctrine_old }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				technology = trench_warfare
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_superior_rifles
+		icon = GFX_goal_generic_military_sphere
+		x = -1
+		y = 2
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_trench_warfare }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_breakthrough_forces
+		icon = GFX_focus_generic_paratrooper
+		x = -1
+		y = 3
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_superior_rifles }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = para_tech
+				category = marine_tech
+				category = mountaineers_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_artillery_support
+		icon = GFX_goal_generic_army_artillery2
+		x = -3
+		y = 2
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_trench_warfare }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_support_equipment
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = -3
+		y = 3
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_artillery_support }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_mass_assault
+		icon = GFX_goal_generic_attack_allies
+		x = 2
+		y = 1
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_trench_warfare }
+		prerequisite = { focus = generic_doctrine_old }
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 25
+				OR = {
+					original_tag = SOV
+					original_tag = RUS
+				}
+			}
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				technology = mass_assault
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_rifle_production
+		icon = GFX_focus_generic_industry_3
+		x = 1
+		y = 2
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_mass_assault }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_ideas = generic_cheap_rifles
+		}
+	}
+	
+	focus = {
+		id = generic_rifle_stock
+		icon = GFX_goal_generic_small_arms
+		x = 1
+		y = 3
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_rifle_production }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_body
+		icon = GFX_goal_generic_political_pressure
+		x = 3
+		y = 2
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_mass_assault }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_ideas = generic_manpower_boost_1
+		}
+	}
+	
+	focus = {
+		id = generic_popular_support
+		icon = GFX_goal_generic_propaganda
+		x = 3
+		y = 3
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_body }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_lightning_war
+		icon = GFX_focus_generic_army_tanks2
+		x = -2
+		y = 1
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_superior_firepower }
+		prerequisite = { focus = generic_doctrine_new }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				technology = mobile_warfare
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_mobility
+		icon = GFX_goal_generic_army_motorized
+		x = -3
+		y = 2
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_lightning_war }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_swift_thrust
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = -3
+		y = 3
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_mobility }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = mobile_warfare
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_mechanized_effort
+		icon = GFX_goal_generic_build_tank
+		x = -1
+		y = 2
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_lightning_war }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 0.75
+				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_winged_knights
+		icon = GFX_focus_generic_license_production
+		x = -1
+		y = 3
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_mechanized_effort }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_ideas = generic_fast_tanks
+		}
+	}
+	
+	focus = {
+		id = generic_superior_firepower
+		icon = GFX_goal_generic_army_artillery2
+		x = 2
+		y = 1
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_lightning_war }
+		prerequisite = { focus = generic_doctrine_new }
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				technology = superior_firepower
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_thunderous_storm
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 3
+		y = 2
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_superior_firepower }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = superior_firepower
+			}
+			add_ideas = generic_thunderous_storm_idea
+		}
+	}
+	
+	focus = {
+		id = generic_ic_artillery
+		icon = GFX_goal_generic_occupy_start_war
+		x = 3
+		y = 3
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_thunderous_storm }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 10
+			add_ideas = generic_ic_artillery_idea
+		}
+	}
+	
+	focus = {
+		id = generic_advanced_pieces
+		icon = GFX_focus_generic_air_defense
+		x = 1
+		y = 2
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_superior_firepower }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				ahead_reduction = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_rocket_artillery
+		icon = GFX_goal_generic_army_artillery
+		x = 1
+		y = 3
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_advanced_pieces }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = rocket_artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_old_minds
+		icon = GFX_focus_generic_military_mission
+		x = 0
+		y = 4
+		relative_position_id = generic_doctrine_old
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_breakthrough_forces focus = generic_support_equipment }
+		prerequisite = { focus = generic_rifle_stock focus = generic_popular_support }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 50
+			add_ideas = generic_old_generals
+		}
+	}
+	
+	focus = {
+		id = generic_new_minds
+		icon = GFX_focus_generic_military_mission
+		x = 0
+		y = 4
+		relative_position_id = generic_doctrine_new
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_swift_thrust focus = generic_winged_knights }
+		prerequisite = { focus = generic_rocket_artillery focus = generic_ic_artillery }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 50
+			add_ideas = generic_young_generals
 		}
 	}
 	
