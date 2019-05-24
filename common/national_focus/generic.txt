@@ -1169,8 +1169,7 @@ focus_tree = {
 		relative_position_id = generic_doctrine_old
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = generic_breakthrough_forces focus = generic_support_equipment }
-		prerequisite = { focus = generic_rifle_stock focus = generic_popular_support }
+		prerequisite = { focus = generic_popular_support focus = generic_support_equipment focus = generic_rifle_stock focus = generic_breakthrough_forces }
 		ai_will_do = {
 			factor = 10
 		}
@@ -1188,8 +1187,7 @@ focus_tree = {
 		relative_position_id = generic_doctrine_new
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = generic_swift_thrust focus = generic_winged_knights }
-		prerequisite = { focus = generic_rocket_artillery focus = generic_ic_artillery }
+		prerequisite = { focus = generic_ic_artillery focus = generic_winged_knights focus = generic_rocket_artillery focus = generic_swift_thrust }
 		ai_will_do = {
 			factor = 10
 		}
