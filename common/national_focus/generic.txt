@@ -727,7 +727,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = generic_mass_assault }
 		prerequisite = { focus = generic_doctrine_old }
@@ -750,7 +750,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_trench_warfare }
 		ai_will_do = {
@@ -772,7 +772,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_superior_rifles }
 		ai_will_do = {
@@ -796,7 +796,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_trench_warfare }
 		ai_will_do = {
@@ -818,7 +818,7 @@ focus_tree = {
 		x = -3
 		y = 3
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_artillery_support }
 		ai_will_do = {
@@ -840,7 +840,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = generic_trench_warfare }
 		prerequisite = { focus = generic_doctrine_old }
@@ -870,7 +870,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mass_assault }
 		ai_will_do = {
@@ -888,7 +888,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_rifle_production }
 		ai_will_do = {
@@ -910,7 +910,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mass_assault }
 		ai_will_do = {
@@ -928,7 +928,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_body }
 		ai_will_do = {
@@ -951,7 +951,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = generic_superior_firepower }
 		prerequisite = { focus = generic_doctrine_new }
@@ -974,7 +974,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_lightning_war }
 		ai_will_do = {
@@ -996,7 +996,7 @@ focus_tree = {
 		x = -3
 		y = 3
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mobility }
 		ai_will_do = {
@@ -1018,7 +1018,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_lightning_war }
 		ai_will_do = {
@@ -1041,7 +1041,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_mechanized_effort }
 		ai_will_do = {
@@ -1059,7 +1059,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = generic_lightning_war }
 		prerequisite = { focus = generic_doctrine_new }
@@ -1082,7 +1082,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_superior_firepower }
 		ai_will_do = {
@@ -1105,7 +1105,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_thunderous_storm }
 		ai_will_do = {
@@ -1123,7 +1123,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_superior_firepower }
 		ai_will_do = {
@@ -1145,7 +1145,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_advanced_pieces }
 		ai_will_do = {
@@ -1167,7 +1167,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = generic_doctrine_old
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_popular_support focus = generic_support_equipment focus = generic_rifle_stock focus = generic_breakthrough_forces }
 		ai_will_do = {
@@ -1185,7 +1185,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = generic_doctrine_new
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = generic_ic_artillery focus = generic_winged_knights focus = generic_rocket_artillery focus = generic_swift_thrust }
 		ai_will_do = {
@@ -1194,6 +1194,481 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 50
 			add_ideas = generic_young_generals
+		}
+	}
+	
+	##### NAVAL NAVY SEA DOCKYARD TREE
+	
+	focus = {
+		id = generic_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 23
+		y = 0
+		cost = 5.8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			any_state = { is_coastal = yes }
+		}
+		completion_reward = {
+			navy_experience = 50
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_dockyard_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 2
+		relative_position_id = generic_dockyards
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_dockyards }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			any_state = { is_coastal = yes }
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_dockyard_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 4
+		relative_position_id = generic_dockyards
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_dockyard_1 }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			any_state = { is_coastal = yes }
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_dockyard_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 6
+		relative_position_id = generic_dockyards
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_dockyard_2 }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			any_state = { is_coastal = yes }
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						is_in_home_area = yes
+						is_coastal = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_power_projection
+		icon = GFX_focus_generic_navy_battleship2
+		x = -1
+		y = 1
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_submarines }
+		prerequisite = { focus = generic_dockyards }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 2
+				category = fleet_in_being_tree
+				category = base_strike_main
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_firepower_triumphs
+		icon = GFX_goal_generic_navy_battleship
+		x = -1
+		y = 3
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_power_projection }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 1
+				category = fleet_in_being_tree
+				category = base_strike_main
+			}
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = bb_tech
+				category = bc_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_heavy_equipment_navy
+		icon = GFX_goal_generic_amphibious_assault
+		x = -1
+		y = 5
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_firepower_triumphs }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 1
+				category = fleet_in_being_tree
+				category = base_strike_main
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = basic_heavy_battery
+				technology = improved_heavy_battery
+				technology = advanced_heavy_battery
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_ships_1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = -1
+		y = 7
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_heavy_equipment_navy }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 1
+				category = fleet_in_being_tree
+				category = base_strike_main
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ships
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 1
+		y = 1
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_power_projection }
+		prerequisite = { focus = generic_dockyards }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_stealth_kills
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 1
+		y = 3
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_submarines }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_mine_layers
+		icon = GFX_goal_generic_navy_cruiser
+		x = 1
+		y = 5
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_stealth_kills }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = naval_minelaying
+				category = naval_mines
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_ships_2
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 1
+		y = 7
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_mine_layers }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ships
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_admiral_academy
+		icon = navy3
+		x = 0
+		y = 8
+		relative_position_id = generic_dockyards
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_ships_1 focus = generic_ships_2 }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = generic_naval_academy
 		}
 	}
 	

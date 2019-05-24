@@ -164,6 +164,29 @@ ideas = {
 				army_leader_start_logistics_level = 1
 			}
 		}
+		
+		generic_naval_academy = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_sea_focused_navy
+
+			removal_cost = -1
+
+			modifier = {
+				spotting_chance = 0.25
+				naval_speed_factor = 0.15
+				navy_max_range_factor = 0.05
+				naval_coordination = 0.05
+				experience_gain_navy = 0.03
+			}
+		}
 	
 	}
 	
