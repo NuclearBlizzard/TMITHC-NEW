@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = fascism
 			ideas = {
 
 			}
