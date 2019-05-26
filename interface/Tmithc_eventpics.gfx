@@ -1,0 +1,19 @@
+spriteTypes = {
+
+	######## NEWS EVENTS
+	spriteType = {
+		name = "GFX_news_event_america_germania"
+		texturefile = "gfx/event_pics/news_event_america_germania.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_britain_germania"
+		texturefile = "gfx/event_pics/news_event_britain_germania.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_france_germania"
+		texturefile = "gfx/event_pics/news_event_france_germania.dds"
+	}
+	
+}
