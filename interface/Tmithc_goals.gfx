@@ -1058,6 +1058,11 @@ spriteTypes = {
 		name = "british_german_navy"
 		texturefile = "gfx/interface/goals/germany/british_german_navy.dds"			
 	}
+	
+	SpriteType = {
+		name = "german_global_policy"
+		texturefile = "gfx/interface/goals/germany/german_global_policy.tga"			
+	}
 
 	SpriteType = {
 		name = "german_africa"

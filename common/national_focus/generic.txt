@@ -644,6 +644,23 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = generic_research_slot
+		icon = GFX_goal_generic_scientific_exchange
+		relative_position_id = generic_industry
+		x = 0
+		y = 9
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_infra_3 }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
 	##### ARMY TREE
 	
 	focus = {
@@ -1669,6 +1686,917 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 50
 			add_ideas = generic_naval_academy
+		}
+	}
+	
+	##### POLITICAL TREE
+	
+	focus = {
+		id = generic_politics
+		icon = GFX_focus_generic_self_management
+		x = 34
+		y = 0
+		cost = 5.8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 65
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = generic_order_b4_freedom
+		icon = anti_democracy
+		x = -4
+		y = 1
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_freedom_idea }
+		prerequisite = { focus = generic_politics }
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 60
+				OR = {
+					is_puppet_of = GER
+					is_puppet_of = ITA
+					is_puppet_of = JAP
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 40
+				has_government = communism
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_freedom_idea
+		icon = GFX_goal_continuous_boost_freedom
+		x = 4
+		y = 1
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_order_b4_freedom }
+		prerequisite = { focus = generic_politics }
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				has_government = democratic
+			}
+			modifier = {
+				factor = 80
+				has_government = neutrality
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_fascism_1
+		icon = GFX_goal_support_fascism
+		x = -5
+		y = 2
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_communism_1 }
+		prerequisite = { focus = generic_order_b4_freedom }
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 50
+				OR = {
+					is_puppet_of = GER
+					is_puppet_of = ITA
+					is_puppet_of = JAP
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = { idea = nationalism days = 730 }
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	
+	focus = {
+		id = generic_communism_1
+		icon = GFX_goal_support_communism
+		x = -3
+		y = 2
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_fascism_1 }
+		prerequisite = { focus = generic_order_b4_freedom }
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 50
+				has_government = communism
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = { idea = internationalism days = 730 }
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	
+	focus = {
+		id = generic_com_fasc_1
+		icon = GFX_goal_generic_propaganda
+		x = -4
+		y = 3
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_fascism_1 focus = generic_communism_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = generic_com_fasc_2
+		icon = GFX_goal_generic_demand_territory
+		x = -4
+		y = 4
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_com_fasc_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = generic_personality_cult
+		}
+	}
+	
+	focus = {
+		id = generic_com_fasc_3
+		icon = GFX_focus_generic_industry_2
+		x = -4
+		y = 5
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_com_fasc_2 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = { idea = generic_industrial_effort days = 180 }
+		}
+	}
+	
+	focus = {
+		id = generic_com_fasc_4
+		icon = GFX_goal_generic_military_sphere
+		x = -4
+		y = 6
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_com_fasc_3 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_ideas = militarism_focus
+		}
+	}
+	
+	focus = {
+		id = generic_fascism_2
+		icon = GFX_goal_generic_political_pressure
+		x = -6
+		y = 3
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_fascism_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.25
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_fascism_3
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = -6
+		y = 4
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_fascism_2 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_fascism_4
+		icon = GFX_goal_generic_major_war
+		x = -6
+		y = 5
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_fascism_3 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_fascism_5
+		icon = GFX_goal_generic_secret_weapon
+		x = -6
+		y = 6
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_fascism_4 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = generic_fascism_6
+		icon = fascism2
+		x = -6
+		y = 7
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_fascism_5 }
+		bypass = {
+			has_government = fascism
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_communism_2
+		icon = GFX_focus_prc_agrarian_socialism
+		x = -2
+		y = 3
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_communism_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.25
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_communism_3
+		icon = GFX_goal_generic_soviet_construction
+		x = -2
+		y = 4
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_communism_2 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_communism_4
+		icon = GFX_goal_generic_war_with_comintern
+		x = -2
+		y = 5
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_communism_3 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_communism_5
+		icon = GFX_focus_generic_socialist_science
+		x = -2
+		y = 6
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_communism_4 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = generic_communism_6
+		icon = GFX_focus_generic_soviet_politics
+		x = -2
+		y = 7
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		bypass = {
+			has_government = communism
+		}
+		prerequisite = { focus = generic_communism_5 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_neutrality_1
+		icon = GFX_goal_generic_neutrality_focus
+		x = 3
+		y = 2
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_democratic_1 }
+		prerequisite = { focus = generic_freedom_idea }
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 50
+				OR = {
+					threat > 0.5
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = { idea = generic_on_our_own days = 730 }
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	
+	focus = {
+		id = generic_democratic_1
+		icon = GFX_goal_support_democracy
+		x = 5
+		y = 2
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = generic_neutrality_1 }
+		prerequisite = { focus = generic_freedom_idea }
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 80
+				OR = {
+					threat > 0.5
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_government = democratic
+					original_tag = FRA
+					original_tag = ENG
+					original_tag = NEU
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = { idea = generic_liberty_or_death days = 730 }
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	
+	focus = {
+		id = generic_neu_dem_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 4
+		y = 3
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neutrality_1 focus = generic_democratic_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = generic_neu_dem_2
+		icon = GFX_goal_generic_defence
+		x = 4
+		y = 4
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neu_dem_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = generic_fort_of_liberty
+			set_country_flag = fort_of_liberty
+		}
+	}
+	
+	focus = {
+		id = generic_neu_dem_3
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 4
+		y = 5
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neu_dem_2 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = { idea = generic_better_future days = 180 }
+		}
+	}
+	
+	focus = {
+		id = generic_neu_dem_4
+		icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 6
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neu_dem_3 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_ideas = generic_our_own_path
+		}
+	}
+	
+	focus = {
+		id = generic_neutrality_2
+		icon = GFX_focus_generic_home_defense
+		x = 2
+		y = 3
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neutrality_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_neutrality_3
+		icon = GFX_goal_generic_production2
+		x = 2
+		y = 4
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neutrality_2 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_neutrality_4
+		icon = diplomacy
+		x = 2
+		y = 5
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neutrality_3 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			set_rule = {
+				can_create_factions = yes
+			}
+			every_neighbor_country = {
+				limit = {
+					OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+					}
+				}
+				add_opinion_modifier = {
+					target = PREV
+					modifier = large_increase
+				}
+			}
+			custom_effect_tooltip = tooltip_generic_1
+		}
+	}
+	
+	focus = {
+		id = generic_neutrality_5
+		icon = GFX_focus_research
+		x = 2
+		y = 6
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neutrality_4 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = generic_neutrality_6
+		icon = democracy5
+		x = 2
+		y = 7
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_neutrality_5 }
+		bypass = {
+			has_government = neutrality
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_democratic_2
+		icon = dangerous_deal2
+		x = 6
+		y = 3
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_democratic_1 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.25
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_democratic_3
+		icon = GFX_focus_generic_treaty
+		x = 6
+		y = 4
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_democratic_2 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_democratic_4
+		icon = GFX_focus_usa_voter_registration_act
+		x = 6
+		y = 5
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_democratic_3 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_democratic_5
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 6
+		y = 6
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_democratic_4 }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = generic_democratic_6
+		icon = democracy3
+		x = 6
+		y = 7
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = generic_democratic_5 }
+		bypass = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+	
+	##### POST-POLITICAL TREE
+	
+	focus = {
+		id = generic_free_just_world
+		icon = global_community
+		x = 4
+		y = 8
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+		}
+		prerequisite = { focus = generic_democratic_6 focus = generic_neutrality_6 }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_political_power = 250
+		}
+	}
+	
+	focus = {
+		id = generic_new_world_order
+		icon = german_global_policy
+		x = -4
+		y = 8
+		relative_position_id = generic_politics
+		cost = 5.8
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+		}
+		prerequisite = { focus = generic_fascism_6 focus = generic_communism_6 }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_political_power = 250
 		}
 	}
 	

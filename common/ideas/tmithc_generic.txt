@@ -187,6 +187,153 @@ ideas = {
 				experience_gain_navy = 0.03
 			}
 		}
+		
+		generic_personality_cult = {
+
+			allowed = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = FRA_national_mobilization_focus
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+		
+		generic_industrial_effort = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_build_infrastructure
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		generic_liberty_or_death = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_democratic_drift_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		
+		generic_on_our_own = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = hol_aloof_neutrality
+
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+		
+		generic_fort_of_liberty = {
+
+			allowed = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_victors_of_ww1
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		generic_better_future = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_local_self_management
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				industry_repair_factor = 0.25
+			}
+		}
+		
+		generic_our_own_path = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				army_morale_factor = 0.05
+			}
+		}
 	
 	}
 	
