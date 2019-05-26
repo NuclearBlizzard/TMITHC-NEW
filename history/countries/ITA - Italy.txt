@@ -167,7 +167,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Antonio Segni"
-	picture = "generals/Antonio_Segni.dds"
+	picture = "Antonio_Segni.dds"
 	traits = { career_officer organizer cavalry_officer }
 	skill = 3
 	attack_skill = 2
@@ -177,7 +177,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Giulio Andreotti"
-	picture = "generals/Giulio_Andreotti.dds"
+	picture = "Giulio_Andreotti.dds"
 	traits = { trait_cautious infantry_leader infantry_expert }
 	skill = 3
 	attack_skill = 2
@@ -187,7 +187,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Paolo E. Taviani"
-	picture = "generals/Paolo_Emilio_Taviani.dds"
+	picture = "Paolo_Emilio_Taviani.dds"
 	traits = { commando trickster }
 	skill = 2
 	attack_skill = 1
@@ -207,7 +207,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Roberto Tremelloni"
-	picture = "generals/Roberto_Tremelloni.dds"
+	picture = "Roberto_Tremelloni.dds"
 	traits = { trait_cautious infantry_leader }
 	skill = 1
 	attack_skill = 1
@@ -218,7 +218,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Inigo Campioni"
-		picture = "Portrait_Italy_Inigo_Campioni.dds"
+	picture = "Portrait_Italy_Inigo_Campioni.dds"
 	traits = { battleship_adherent superior_tactician spotter }
 	skill = 3
 	attack_skill = 2
@@ -229,7 +229,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Alberto Da Zara"
-		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
+	picture = "Portrait_Italy_Alberto_Da_Zara.dds"
 	traits = { gentlemanly superior_tactician }
 	skill = 3
 	attack_skill = 3
@@ -240,7 +240,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Giuseppe Fioravanzo"
-		picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
+	picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
 	traits = { aviation_enthusiast blockade_runner }
 	skill = 4
 	attack_skill = 2
@@ -251,7 +251,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Carlo Bergamini"
-		picture = "Portrait_Italy_Carlo_Bergamini.dds"
+	picture = "Portrait_Italy_Carlo_Bergamini.dds"
 	traits = { battleship_adherent gunnery_expert ironside }
 	skill = 2
 	attack_skill = 3
@@ -262,7 +262,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Angelo Iachino"
-		picture = "Portrait_Italy_Angelo_Iachino.dds"
+	picture = "Portrait_Italy_Angelo_Iachino.dds"
 	traits = { bold navy_career_officer superior_tactician spotter }
 	skill = 2
 	attack_skill = 2
