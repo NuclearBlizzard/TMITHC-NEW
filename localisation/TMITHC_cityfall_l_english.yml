@@ -1,0 +1,18 @@
+﻿l_english:
+########### events #######
+cityfall.1.t:0 "Fall of Germania"
+cityfall.1.d:0 "As French forces advanced through the heart of [GER.GetNameDef], some of France's most seasoned troops captured the German Capitol of Germania after shelling what remained of the Volkshalle to the ground.\n\nEverywhere in the city French tricolours adorned by the cross of Lorraine can be seen proudly waving over the rubbles of Germania, and a massive victory parade has been organized and set in motion by the French administration now located in the Rathaus Schöneberg."
+cityfall.1.a:0 "Defeated by those they sought to destroy."
+cityfall.1.b:0 "Vive la France!"
+cityfall.1.c:0 "We should've burned Paris in 1871!"
+
+cityfall.2.d:0 "As British forces approached the outskirts of Germania, the armed forces of the Reich have gathered their forces in a last attempt to root the British forces out of their capital.\n\nSuch attempt was ultimately pointless, as British forces led by some of Britain's most skilled generals, after an extremely enduring and pitched battle, decimated the German forces before entering the city prosper and capturing the Volkshalle, who was still surprisingly in good shape, and served as the headquarters of the British general staff."
+cityfall.2.a:0 "Good on them."
+cityfall.2.b:0 "Good ole' Britannia."
+cityfall.2.c:0 "We'll take it back, at any cost."
+
+cityfall.3.d:0 "American forces were reported this morning to have entered and annihilated the forces of the German Reich in their own Capitol - Germania.\n\nWitnesses say that American special forces stormed and took over the Tempelhof Airport and secured bridges as their men advanced through the streets and alleyways of the megalopolis, supported by armored forces, surprising the Reich's forces who, despite fighting valiantly, ultimated folded under the sheer firepower of the American war machine - now incomparable to the small buffer Neutral Zone it served as long ago."
+cityfall.3.a:0 "From just Denver to Germania? That's progress."
+cityfall.3.b:0 "From total anarchy to hegemony."
+cityfall.3.c:0 "I cannot, and will not believe this."
+########### tooltips #########

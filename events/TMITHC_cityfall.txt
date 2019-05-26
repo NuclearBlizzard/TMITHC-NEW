@@ -1,0 +1,130 @@
+﻿add_namespace = cityfall
+
+# France captures Germania
+news_event = {
+	id = cityfall.1
+	title = cityfall.1.t
+	desc = cityfall.1.d
+	picture = GFX_news_event_france_germania
+	
+	major = yes
+	
+	trigger = {
+		361 = { is_controlled_by = FRA }
+		361 = { is_owned_by = GER }
+		FRA = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_germania }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_germania
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = cityfall.1.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = cityfall.1.b
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = cityfall.1.c
+		trigger = { TAG = GER }
+	}
+}
+
+# Britain captures Germania
+news_event = {
+	id = cityfall.2
+	title = cityfall.1.t
+	desc = cityfall.2.d
+	picture = GFX_news_event_britain_germania
+	
+	major = yes
+	
+	trigger = {
+		361 = { is_controlled_by = ENG }
+		361 = { is_owned_by = GER }
+		ENG = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_germania }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_germania
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = cityfall.2.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = cityfall.2.b
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = cityfall.2.c
+		trigger = { TAG = GER }
+	}
+}
+
+# US (NEutral Zone) captures Germania
+news_event = {
+	id = cityfall.3
+	title = cityfall.1.t
+	desc = cityfall.3.d
+	picture = GFX_news_event_america_germania
+	
+	major = yes
+	
+	trigger = {
+		361 = { is_controlled_by = USA }
+		361 = { is_owned_by = GER }
+		USA = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_germania }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_germania
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = cityfall.3.a
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = cityfall.3.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = cityfall.3.c
+		trigger = { TAG = GER }
+	}
+}
