@@ -1,0 +1,66 @@
+﻿add_namespace = france_tmi
+
+# Remilitarization of the Upper Seine
+country_event = {
+	id = france_tmi.1
+	title = france_tmi.1.t
+	desc = france_tmi.1.d
+	picture = GFX_report_event_german_troops
+	
+	trigger = {
+		original_tag = FRA
+		has_war = yes
+		NOT = { has_country_flag = fra_seine_remilitarized }
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = france_tmi.1.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+				TAG = GER
+			}
+		}
+		788 = {
+			set_demilitarized_zone = no
+		}
+		789 = {
+			set_demilitarized_zone = no
+		}
+		790 = {
+			set_demilitarized_zone = no
+		}
+	}
+	option = {
+		name = france_tmi.1.b
+		trigger = { TAG = FRA }
+		788 = {
+			set_demilitarized_zone = no
+		}
+		789 = {
+			set_demilitarized_zone = no
+		}
+		790 = {
+			set_demilitarized_zone = no
+		}
+	}
+	option = {
+		name = france_tmi.1.c
+		trigger = { TAG = GER }
+		788 = {
+			set_demilitarized_zone = no
+		}
+		789 = {
+			set_demilitarized_zone = no
+		}
+		790 = {
+			set_demilitarized_zone = no
+		}
+	}
+}

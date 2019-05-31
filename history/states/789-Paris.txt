@@ -1,0 +1,29 @@
+
+state={
+	id=789
+	name="STATE_789"
+	manpower = 6638500
+	
+	state_category = megalopolis
+	
+
+	history={
+		owner = FRA
+		victory_points = {
+			11506 50
+		}
+		buildings = {
+			infrastructure = 10
+			arms_factory = 2
+			industrial_complex = 2
+			anti_air_building = 5
+			air_base = 10
+		}
+		add_core_of = FRA
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		9534 11506 11518 
+	}
+}

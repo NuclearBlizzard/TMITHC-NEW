@@ -1,10 +1,10 @@
 
 state={
-	id=15
-	name="STATE_15"
-	manpower = 4352100
+	id=788
+	name="STATE_788"
+	manpower = 1252100
 	resources={
-		steel=48 # was: 36
+		steel=20 # was: 36
 	}
 	
 	state_category = metropolis
@@ -15,9 +15,6 @@ state={
 			9434 25
 		}
 		victory_points = {
-			6449 10
-		}
-		victory_points = {
 			11563 15
 		}
 		victory_points = {
@@ -26,13 +23,8 @@ state={
 		buildings = {
 			infrastructure = 9
 			industrial_complex = 3
-			dockyard = 3
-			arms_factory = 1
-			air_base = 10
-			6449 = {
-				naval_base = 6
-				coastal_bunker = 1
-			}
+			dockyard = 1
+			air_base = 5
 			9434 = {
 				naval_base = 10
 				coastal_bunker = 3
@@ -42,9 +34,10 @@ state={
 			}
 		}
 		add_core_of = FRA
+		set_demilitarized_zone = yes
 	}
 
 	provinces={
-		485 539 553 3534 3549 3579 6449 6569 6599 9434 9550 9578 11521 11535 11563 
+		485 6569 9434 11563 
 	}
 }

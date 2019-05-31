@@ -1,0 +1,23 @@
+
+state={
+	id=791
+	name="STATE_791"
+	manpower = 521704
+	state_category = town
+
+	history={
+		owner = ITA
+		victory_points = {
+			3780 25
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = ITA
+		add_core_of = SWI
+	}
+
+	provinces={
+		658 3641 3662 9600
+	}
+}

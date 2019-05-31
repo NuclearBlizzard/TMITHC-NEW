@@ -1,4 +1,12 @@
 ﻿l_english:
+########## AFTER REWORK
+######### events #######
+france_tmi.1.t:0 "Upper Seine Remilitarized"
+france_tmi.1.d:0 "Following recent events, the French government has ordered their army to enter the previously demilitarized zone of the Upper Seine, the river that flows through Northern France and directly into the heart of Paris itself.\n\nA famous German reporter said that this event is eerily similar to the Remilitarization of the Rhineland that took place in 1936, and that France, despite on the outside having no chance to face Germany on its own, still nonetheless threatens German interests in the region."
+france_tmi.1.a:0 "Just like the Rhineland."
+france_tmi.1.b:0 "The Seine is rightfully French."
+france_tmi.1.c:0 "This does not bode well for the Reich."
+################## PRE-REWORK
 ########## focus localisation ######
 FRA_francisqu:0 "§YThe French State§!"
 FRA_francisqu_desc:0 "The French State is the successor to the Third French Republic, but it however barely shares any resemblance with it, while the former Republic was a parliamentary democratic republic, the French State is merely a dictatorship reliant on Germany's aid."
