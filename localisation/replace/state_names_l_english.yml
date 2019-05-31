@@ -309,7 +309,7 @@
  STATE_308:0 "Leeward Islands"
  STATE_309:0 "Suriname"
  STATE_310:0 "French Guiana"
- STATE_311:0 "British Mexico"
+ STATE_311:0 "Belize"
  STATE_312:0 "Honduras"
  STATE_313:0 "Guatemala"
  STATE_314:0 "El Salvador"
@@ -774,3 +774,4 @@
  STATE_789:0 "Paris"
  STATE_790:0 "Seine"
  STATE_791:0 "Svizzera Italiana"
+ STATE_792:0 "Eastern Thrace"

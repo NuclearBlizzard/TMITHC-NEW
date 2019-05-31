@@ -1,0 +1,30 @@
+state= {
+	id=792
+	name="STATE_792"
+	manpower = 2104509
+	resources={
+		chromium=60
+	}
+	
+	state_category = city
+
+	history= {
+		add_claim_by = GRE
+		owner = BUL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 1
+			arms_factory = 1
+			air_base = 2
+			849 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = TUR
+		add_core_of = BUL
+	}
+	provinces = {
+		849 922 3879 3893 6895 11842 	
+	}
+}
