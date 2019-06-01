@@ -1,0 +1,25 @@
+state={
+	id=794
+	name="STATE_794"
+	resources={
+		oil=8
+	}
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = PER
+		add_core_of = RKK
+		add_core_of = AZR
+
+	}
+
+	provinces={
+		4473 12434
+	}
+	manpower=78224
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -4,6 +4,8 @@ state={
 
 	history={
 		owner = RKK
+		add_core_of = RKK
+		add_core_of = ARM
 		victory_points = {
 			12320 1 
 		}

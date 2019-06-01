@@ -4,6 +4,8 @@ state={
 
 	history={
 		owner = RKK
+		add_core_of = RKK
+		add_core_of = GEO
 		victory_points = {
 			1599 5 
 		}
