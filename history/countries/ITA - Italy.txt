@@ -156,7 +156,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Giovanni Messe"
-	picture = "generals/Giovanni_Messe.dds"
+	picture = "Giovanni_Messe.dds"
 	traits = { logistics_wizard defensive_doctrine }
 	skill = 4
 	attack_skill = 3
@@ -197,7 +197,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Randolfo Pacciardi"
-	picture = "generals/Randolfo_Pacciardi.dds"
+	picture = "Randolfo_Pacciardi.dds"
 	traits = { trickster chief_engineer }
 	skill = 2
 	attack_skill = 2
