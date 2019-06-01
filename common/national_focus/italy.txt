@@ -1159,18 +1159,9 @@ focus_tree = {
 		}
 		mutually_exclusive = { }
 		available = { 
-			OR = {
-				AND = {
-					ALB = { is_subject_of = ROOT }
-					ALB = {
-						has_full_control_of_state = 44
-						has_full_control_of_state = 105
-					}
-				}
-				AND = {
-					has_full_control_of_state = 44
-					has_full_control_of_state = 105
-				}
+			AND = {
+				has_full_control_of_state = 44
+				has_full_control_of_state = 105
 			}
 		}
 		select_effect = { }
@@ -1395,7 +1386,9 @@ focus_tree = {
 			ALB = { is_subject_of = ROOT }
 		}
 		select_effect = { }
-		bypass = { }
+		bypass = {
+			NOT = { country_exists = ALB }
+		}
 		cancel = { }
 
 		cancel_if_invalid = yes
@@ -2777,7 +2770,9 @@ focus_tree = {
 			ALB = { has_autonomy_state = autonomy_integrated_puppet } 
 		}
 		select_effect = { }
-		bypass = { }
+		bypass = {
+			NOT = { country_exists = ALB }
+		}
 		cancel = { }
 
 		cancel_if_invalid = yes
