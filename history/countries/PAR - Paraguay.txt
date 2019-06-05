@@ -11,25 +11,15 @@ set_technology = {
 
 
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 96
-		}
-		
-		communism = {
-			popularity = 4
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1936.1.1"
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 96
+    communism = 4
 }
 
 #create_country_leader = {

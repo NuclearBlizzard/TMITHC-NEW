@@ -1,4 +1,4 @@
-capital = 285
+﻿capital = 285
 
 oob = "COA_1960"
 
@@ -63,29 +63,17 @@ add_ideas = {
 set_convoys = 100
 
 set_politics = {
-
-	parties = {
-		democratic = {
-			popularity = 3
-		}
-
-		fascism = {
-			popularity = 7
-		}
-
-		communism = {
-			popularity = 2
-		}
-
-		neutrality = {
-			popularity = 88
-		}
-	}
-
 	ruling_party = neutrality
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 3
+    fascism = 7
+    communism = 2
+    neutrality = 88
 }
 
 set_stability = 0.75

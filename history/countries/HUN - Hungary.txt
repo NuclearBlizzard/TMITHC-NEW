@@ -21,26 +21,18 @@ set_technology = {
 
 
 
-set_politics = {
-	parties = {
-		democratic = { 
-			popularity = 3
-		}
-		fascism = {
-			popularity = 97
-		}
-		neutrality = {
-			popularity = 0
-		}
-		communism = {
-			popularity = 0
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 3
+    fascism = 97
+    neutrality = 0
+    communism = 0
 }
 
 create_country_leader = {

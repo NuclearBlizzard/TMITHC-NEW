@@ -11,27 +11,17 @@ set_war_support = 0.1
 set_convoys = 10
 
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 3
-		}
-
-		fascism = {
-			popularity = 97
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1958.6.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 3
+    fascism = 97
+    communism = 0
 }
 
 create_country_leader = {
@@ -46,28 +36,18 @@ create_country_leader = {
 }
 
 1959.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 40
-			}
-
-			fascism = {
-				popularity = 60
-			}
-			
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = nazism
 		last_election = "1936.6.7"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        democratic = 40
+        fascism = 60
+        communism = 0
+    }
 
 	create_country_leader = {
 		name = "Arnulfo Arias"

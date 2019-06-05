@@ -58,30 +58,18 @@ set_war_support = 0.1
 
 set_convoys = 500
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 1
-		}
-
-		fascism = {
-			popularity = 97
-		}
-		
-		communism = {
-			popularity = 1
-		}
-		
-		neutrality = { 
-			popularity = 1
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1959.1.1"
 	election_frequency = 72
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 1
+    fascism = 97
+    communism = 1
+    neutrality = 1
 }
 
 set_stability = 0.75

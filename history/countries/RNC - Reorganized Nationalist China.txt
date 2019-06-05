@@ -26,24 +26,15 @@ set_technology = {
 
 
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 100
-		}
-		
-		communism = {
-			popularity = 0
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1933.4.26"
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 100
+    communism = 0
 }
 
 set_convoys = 500

@@ -99,24 +99,15 @@ if = {
 set_convoys = 181
 
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 6
-		}
-
-		fascism = {
-			popularity = 90
-		}
-		
-		communism = {
-			popularity = 4
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1932.5.1"
+}
+
+set_popularities = {
+    democratic = 6
+    fascism = 90
+    communism = 4
 }
 
 add_ideas = {

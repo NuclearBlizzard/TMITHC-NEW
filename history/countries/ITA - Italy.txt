@@ -118,26 +118,17 @@ if = {
 
 set_convoys = 741
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 7
-		}
-
-		fascism = {
-			popularity = 89
-		}
-		
-		communism = {
-			popularity = 4
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 7
+    fascism = 89
+    communism = 4
 }
 
 set_autonomy = { target = ITE autonomous_state = autonomy_colony }

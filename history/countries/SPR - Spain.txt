@@ -25,26 +25,17 @@ set_technology = {
 	transport = 1
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 2
-		}
-
-		fascism = {
-			popularity = 98
-		}
-		
-		communism = {
-			popularity = 0
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 2
+    fascism = 98
+    communism = 0
 }
 
 set_convoys = 150

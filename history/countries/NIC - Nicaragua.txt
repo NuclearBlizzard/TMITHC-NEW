@@ -60,31 +60,18 @@ set_convoys = 10
 	}
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 15
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-
-		neutrality = {
-			popularity = 70
-		}
-	}
-	
+set_politics = {	
 	ruling_party = neutrality
 	last_election = "1959.1.1"
 	election_frequency = 0
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 15
+    fascism = 5
+    communism = 10
+    neutrality = 70
 }
 
 	create_country_leader = {

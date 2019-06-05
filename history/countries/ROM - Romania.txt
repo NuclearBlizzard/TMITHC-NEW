@@ -51,30 +51,17 @@ add_ideas = {
 set_convoys = 100
 
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 12
-		}
-
-		fascism = {
-			popularity = 45
-		}
-		
-		communism = {
-			popularity = 3
-			banned = yes
-		}
-		
-		neutrality = { 
-			popularity = 40
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1945.1.1"
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 12
+    fascism = 45
+    communism = 3
+    neutrality = 40
 }
 
 
