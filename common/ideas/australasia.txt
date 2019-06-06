@@ -1,11 +1,11 @@
 ideas = {
 
-		country = {
-				COA_treaty_of_canberra = {
 
-						allowed = {
-								always = yes
-						picture = gfx_idea_treaty_of_canberra
+		country = {
+			COA_treaty_of_canberra = {
+
+					allowed = {
+							always = yes
 						}
 
 						allowed_civil_war = {
@@ -13,6 +13,8 @@ ideas = {
 						}
 
 						removal_cost = -1
+
+						picture = COA_treaty_of_canberra
 
 						modifier = {
 								political_power_gain = -0.5
@@ -29,10 +31,12 @@ ideas = {
 						}
 
 						allowed_civil war = {
-								always + yes
+								always = yes
 						}
 
 						removal_cost = -1
+
+						picture = COA_new_zealander_seperatism
 
 						modifier = {
 								stability_factor = -0.05
