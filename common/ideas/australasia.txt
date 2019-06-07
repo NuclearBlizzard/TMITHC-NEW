@@ -24,7 +24,7 @@ ideas = {
 						}
 				}
 
-				COA_new_zealander_seperatism = {
+				COA_new_zealand_seperatism = {
 
 						allowed = {
 								always = yes
@@ -36,7 +36,7 @@ ideas = {
 
 						removal_cost = -1
 
-						picture = COA_new_zealander_seperatism
+						picture = COA_new_zealand_seperatism
 
 						modifier = {
 								stability_factor = -0.05
@@ -44,3 +44,5 @@ ideas = {
 								consumer_goods_factor = 0.05
 						}
 				}
+		}
+}

@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_COA_new_zealand_seperatism"
+		texturefile = "gfx/interface/ideas/australasia/COA_new_zealand_seperatism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COA_treaty_of_canberra"
+		texturefile = "gfx/interface/ideas/australasia/COA_treaty_of_canberra.dds"
+	}
+}

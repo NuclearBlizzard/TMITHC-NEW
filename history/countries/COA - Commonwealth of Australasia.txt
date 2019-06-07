@@ -12,7 +12,7 @@ set_technology = {
 }
 add_ideas = {
 				COA_treaty_of_canberra
-				COA_new_zealander_seperatism
+				COA_new_zealand_seperatism
 
 }
 
