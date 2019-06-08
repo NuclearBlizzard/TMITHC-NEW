@@ -2,8 +2,8 @@
 
 #COACountryCosmetics
 
- COA_communism:0 "Soviet Republic of Australasia"
- COA_communism_DEF:0 "SR Australasia"
+ COA_communism:0 "Democratic Republic of Australasia"
+ COA_communism_DEF:0 "DR Australasia"
 
  COA_democratic:0 "Commonwealth of Australasia"
  COA_democratic_DEF:0 "Australasia"
@@ -54,6 +54,7 @@
 
 #COALeaderDescriptions
 
+POLITICS_ROBERT_MENZIES_DESC:0 "Robert Menzies is a center right Australian political figure born in Victoria province. He is the first Australasian Prime Minister considered 'truly' Australasian, as he and both of his parents were born in Australia. Although incredibly popular in Australia for leading Australasia for most of the post-war era, the New Zealanders have a deep disdain for the man and his Australian-centric and pro-Japanese policies policies. Prime Minister since 1944, Menzies was in power during the signing of the Treaty of Canberra, the foundation of the Commonwealth, and also present at several state visits to Japan. As the turbulent sixties begin, Menzies is challenged with keeping radicals from taking over the country and also preventing the ever aggressive Japanese from ending Australasian sovereignty once and for all."
 #COADescriptions
 
 COA_60's_DESC:0 ""
@@ -64,6 +65,8 @@ COA_treaty_of_canberra:0 "Treaty of Canberra"
 COA_treaty_of_canberra_desc:0 "Following the collapse of the United Kingdom, Australia and the other dominions were left to fend for themselves. Facing certain defeat, Australia and New Zealand signed a seperate peace deal with the Japanese, known as the Treaty of Canberra, which saw both nations' armies limited and outlined the payment of reparations, among other things. This treaty lead to the basis of the union of New Zealand and Australia."
 COA_new_zealand_seperatism:0 "New Zealander Seperatism"
 COA_new_zealand_seperatism_desc:0 "With the defeat of the Allied Powers, Australia and New Zealand were left to fend for themselves in a Japanese dominated region. With peace signed, Australia and New Zealand united into a Commonwealth after the Treaty of Melbourne, formally creating the Commonwealth of Australasia. However, New Zealand has become the lesser member of the union, and the citizens of New Zealand feel animosity towards Australia. For the union to survive, the government must address these concerns."
+COA_japanese_colonists:0 "Japanese Colonists"
+COA_japanese_colonists_desc:0 "As part of the Treaty of Canberra, Australasia was forced to join the Greater East Asian Co-Prosperity Sphere. While this allowed Australasia to remain sovereign and also gain large economic benefits, one of the stipulations was open borders with all other nations in the sphere. This has lead to a large influx of Japanese and Chinese settlers seeking to buy frontier land and start farms. While a boon to our manpower and population, this has lead to a sharp rise in the popularity of Eric Campbell's Australasian National Socialist Party. The Australasian Government is forced to divert extra resources to keep extremists from harming Australasians."
 
 #COAEvents
 

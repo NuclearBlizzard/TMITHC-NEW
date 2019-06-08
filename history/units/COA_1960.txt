@@ -1,0 +1,148 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = COA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "National Guard" 	# Separate Brigade - Represents groups of smaller garrison units spread around the country
+
+	division_names_group = COA_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Cavalry Division"
+
+	division_names_group = COA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	division = {
+		#name = "3rd National Infantry"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7859 # Canberra
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "8th National Infantry"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 1652 # Perth
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "Wellington Militia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1814 # Wellington
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "Christchurch Militia"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 2197 # Christchurch
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+}
+
+### Air OOB ###
+air_wings = {
+	### New South Wales
+	285 = {
+		fighter_equipment_1 = { owner = "COA" amount = 108 }
+		tac_bomber_equipment_1 =  { owner = "COA" amount = 342 }
+		CAS_equipment_1 = { owner = "COA" amount = 52 }
+	}
+	517 = {
+		fighter_equipment_1 = { owner = "COA" amount = 354 }
+		tac_bomber_equipment_1 =  { owner = "COA" amount = 228 }
+		CAS_equipment_1 = { owner = "COA" amount = 258 }
+	}
+	522 = {
+		fighter_equipment_1 = { owner = "COA" amount = 278 }
+		tac_bomber_equipment_1 =  { owner = "COA" amount = 12 }
+		CAS_equipment_1 = { owner = "COA" amount = 258 }
+	}
+
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "COA"
+		}
+		requested_factories = 1
+		progress = 0.66
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "COA"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 100
+	}
+}

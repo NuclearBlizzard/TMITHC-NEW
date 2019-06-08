@@ -44,5 +44,27 @@ ideas = {
 								consumer_goods_factor = 0.05
 						}
 				}
+
+				COA_japanese_colonists = {
+
+						allowed = {
+								always = yes
+						}
+
+						allowed_civil_war = {
+								always = yes
+						}
+
+						removal_cost = -1
+
+						picture = COA_japanese_colonists
+
+						modifier= {
+								monthly_population = 0.03
+								weekly_manpower = 500
+								political_power_gain = -0.05
+								fascism_drift = 0.01
+						}
+				}
 		}
 }
