@@ -1,0 +1,21 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "1st Australasian National Fleet"
+		naval_base = 12406 # Sydney
+		task_force = {
+			name = "Eastern Task Force"
+			location =  12406 # Sydney
+			ship = { name = "AS John Curtin" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = COA version_name = "Indefatigable Class" } } }
+			ship = { name = "AS Scavenger" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = COA version_name = "Indefatigable Class" } } }
+		}
+		task_force = {
+			name = "Pacific Task Force"
+			location =  7798 # Melbourne
+			ship = { name = "AS Sydney" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = COA version_name = "Oberon Class" } } }
+			ship = { name = "AS Adventurer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = COA version_name = "Oberon Class" } } }
+			ship = { name = "AS Canberra" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = COA version_name = "Oberon Class" } } }
+		}
+	}
+}
